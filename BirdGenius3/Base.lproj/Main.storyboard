@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" restorationIdentifier="birdImageView" translatesAutoresizingMaskIntoConstraints="NO" id="wvU-cP-j0o">
+                                <rect key="frame" x="-4" y="38" width="328" height="450"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wIQ-6H-EKK" appends="YES" id="kT5-91-0EY"/>
+                                    <outletCollection property="gestureRecognizers" destination="qCV-lP-SJc" appends="YES" id="djd-pn-NfA"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="hidden" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAl-WE-8th">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="488"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="220"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Tzk-es-MN2" appends="YES" id="YsZ-lQ-kfC"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="latinName" text="Let's go!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdK-pM-FuN">
+                                <rect key="frame" x="0.0" y="476" width="320" height="92"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="f9h-0H-cJN"/>
+                                    <constraint firstAttribute="height" constant="92" id="oiV-Ku-4m2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="60"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.35294117650000001" green="0.32549019610000002" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="nAl-WE-8th" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="0LK-Dd-zUA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NdK-pM-FuN" secondAttribute="bottom" id="184-J5-5F0"/>
+                            <constraint firstItem="NdK-pM-FuN" firstAttribute="top" secondItem="nAl-WE-8th" secondAttribute="bottom" constant="-12" id="B2e-0X-WYB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nAl-WE-8th" secondAttribute="trailing" constant="-20" id="Emj-D6-Bqf"/>
+                            <constraint firstItem="NdK-pM-FuN" firstAttribute="top" secondItem="wvU-cP-j0o" secondAttribute="bottom" constant="-12" id="IIW-by-0wS"/>
+                            <constraint firstItem="wvU-cP-j0o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Ufg-y8-p2d"/>
+                            <constraint firstItem="nAl-WE-8th" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="cIQ-2X-Rmi"/>
+                            <constraint firstItem="wvU-cP-j0o" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="e8c-PL-mYK"/>
+                            <constraint firstItem="nAl-WE-8th" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gcZ-3M-tXr"/>
+                            <constraint firstItem="nAl-WE-8th" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="jfw-lp-LKv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wvU-cP-j0o" secondAttribute="trailing" constant="-20" id="sMI-2a-9iC"/>
+                            <constraint firstItem="NdK-pM-FuN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vEF-iY-zez"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="cVo-GQ-tK3" appends="YES" id="Auh-Fo-Gc5"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="birdImageView" destination="wvU-cP-j0o" id="eNf-Cl-GyY"/>
+                        <outlet property="hidden" destination="nAl-WE-8th" id="gCk-Yj-uNx"/>
+                        <outlet property="nameLabel" destination="NdK-pM-FuN" id="xoC-Wz-iz1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="wIQ-6H-EKK">
+                    <connections>
+                        <action selector="swipeCardLeft:" destination="BYZ-38-t0r" id="bIr-HI-pZT"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="qCV-lP-SJc">
+                    <connections>
+                        <action selector="tapImage:" destination="BYZ-38-t0r" id="ruV-0G-XI1"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="cVo-GQ-tK3">
+                    <connections>
+                        <action selector="swipeCardRight:" destination="BYZ-38-t0r" id="UtI-MR-1lr"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer numberOfTouchesRequired="3" id="Tzk-es-MN2">
+                    <connections>
+                        <action selector="threeFingerTap:" destination="BYZ-38-t0r" id="qzV-Ej-r2M"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="162" y="406"/>
+        </scene>
+    </scenes>
+</document>
